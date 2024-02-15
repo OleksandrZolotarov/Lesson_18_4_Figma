@@ -1,0 +1,144 @@
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue-Roman.woff2") format("woof2"), url("../fonts/HelveticaNeue-Roman.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+[class*=__container] {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+body {
+  font-family: "Helvetica Neue";
+  background: #1a1a1a;
+}
+
+.work__heading {
+  text-align: center;
+}
+.work__heading:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media (max-width: 400px) {
+  .work__heading:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+.work__heading::after {
+  content: "";
+  background-color: #34c759;
+  width: 60px;
+  height: 2px;
+  margin: 28px 0px 0px 0px;
+  display: inline-block;
+}
+@media (max-width: 400px) {
+  .work__heading::after {
+    margin: 14px 0px 0px 0px;
+  }
+}
+.work__title {
+  color: rgb(48, 48, 48);
+  font-size: 100px;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 20px;
+  text-align: center;
+  margin-bottom: -120px;
+}
+@media (max-width: 400px) {
+  .work__title {
+    font-size: 60px;
+    margin-bottom: -70px;
+  }
+}
+.work__subtitle {
+  color: rgb(217, 217, 217);
+  font-size: 36px;
+  line-height: 2.5;
+  letter-spacing: 7.2px;
+  text-align: center;
+  text-transform: capitalize;
+}
+@media (max-width: 400px) {
+  .work__subtitle {
+    font-size: 20px;
+  }
+}
+.work__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0px -15px;
+  row-gap: 30px;
+}
+@media (max-width: 400px) {
+  .work__row {
+    gap: 15px;
+  }
+}
+
+.card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  padding: 0px 15px;
+}
+@media (max-width: 766px) {
+  .card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+  }
+}
+.card__frame {
+  height: 100%;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+  background: rgb(37, 37, 37);
+  padding: 24px;
+  background-color: #252525;
+}
+.card__frame:hover {
+  background-color: #34c759;
+}
+.card__frame:hover .card__title, .card__frame:hover .card__text {
+  color: #191919;
+}
+.card__frame:hover .card__title::after {
+  background-color: #191919;
+}
+.card__title {
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  line-height: 1.18;
+  letter-spacing: -0.28px;
+  text-align: left;
+  text-transform: capitalize;
+}
+.card__title::after {
+  content: "";
+  display: block;
+  background-color: #34c759;
+  width: 56px;
+  height: 2px;
+  margin-top: 15px;
+}
+.card__title:not(:last-child) {
+  margin-bottom: 18px;
+}
+.card__text {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.38;
+  letter-spacing: -0.16px;
+  text-align: left;
+}
